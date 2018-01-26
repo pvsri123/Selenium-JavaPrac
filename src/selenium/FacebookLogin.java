@@ -14,10 +14,11 @@ public class FacebookLogin {
 		driver.get("http://www.facebook.com");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.xpath(".//*[@id='u_0_7']")).sendKeys("Remo");
-		driver.findElement(By.xpath(".//*[@id='u_0_9']")).sendKeys("Demo");
-		driver.findElement(By.xpath(".//*[@id='u_0_c']")).sendKeys("Remo.Demo@gmail.com");
-		driver.findElement(By.xpath(".//*[@id='u_0_j']")).sendKeys("Done");
+		driver.findElement(By.xpath(".//*[@id='u_0_e']")).sendKeys("Remo");
+		driver.findElement(By.xpath(".//*[@id='u_0_g']")).sendKeys("Demo");
+		driver.findElement(By.xpath(".//*[@id='u_0_j']")).sendKeys("Remo.Demo@gmail.com");
+		driver.findElement(By.xpath(".//*[@id='u_0_q']")).sendKeys("Done");
+		driver.findElement(By.id("u_0_m")).sendKeys("Remo.Demo@gmail.com");
 		
 		
 		// select class for drop down menu
@@ -30,8 +31,8 @@ public class FacebookLogin {
 		Select sel3 = new Select(driver.findElement(By.xpath(".//*[@id='year']")));
 		sel3.selectByIndex(6);
 				
-		driver.findElement(By.xpath(".//*[@id='u_0_5']")).click();
-		driver.findElement(By.xpath(".//*[@id='u_0_p']")).click();
+		driver.findElement(By.xpath(".//*[@id='u_0_b']")).click();
+		driver.findElement(By.xpath(".//*[@id='u_0_w']")).click();
 	}
 		
 

@@ -16,6 +16,18 @@ public class CheckpointEx {
 		driver.manage().window().maximize();
 		boolean existence = driver.findElement(By.linkText("Gmail")).isDisplayed();
 		System.out.println(existence);
+		
+		boolean enabled = driver.findElement(By.linkText("Gmail")).isEnabled();
+		
+		System.out.println(enabled);
+		
+		if (enabled == true){
+			System.out.println("Gmail Link enabled - Passed");
+			}
+			else {
+			System.out.println("Gmail Link Not enabled - Failed");
+			}
+		
 		if (existence == true){
 			System.out.println("Gmail Link Exists - Passed");
 			}

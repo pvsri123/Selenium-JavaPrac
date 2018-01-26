@@ -16,6 +16,7 @@ public class LinksEx02 {
 		driver.manage().window().maximize();
 		
 		List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println("Number of links with tag name a:"+links.size());
 		
 		for(WebElement link:links){
 			

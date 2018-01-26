@@ -67,6 +67,7 @@ public class GmailImageUpload {
 	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath, null);
 
 	    Robot rb = new Robot();
+	    
 		// to perform ctrl+V
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);

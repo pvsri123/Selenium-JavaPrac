@@ -6,12 +6,20 @@ public class ArrayEx01 {
 		// Array declaration
 		
 	 String mycars[] = new String[3];
+	 
 	 mycars[0]="Audi";
 	 mycars[1]="Benz";
 	 mycars[2]="BMW";
 	 
 	 System.out.println(mycars.length);
 	
+	 // using For-Each loop or enhanced for loop
+	 
+	 for(String mycar:mycars)
+	 {
+		 System.out.println(mycar);
+	 }
+	 
 	 // String  mycars [] ={"Audi","Benz","BMW"};
 	 // To read values using for loop
 	 /*for(int i=0;i<mycars.length;i++)
@@ -20,11 +28,7 @@ public class ArrayEx01 {
 		 
 	 }*/
 
-	 	// using For-Each loop or enhanced for loop
-	 
-	 for(String mycar:mycars){
-		 System.out.println(mycar);
-	 }
+	 		 
 	}
 
 }

@@ -25,7 +25,7 @@ public class DropdownEx02 {
 		Thread.sleep(2000);*/
 		
 		// to select value by based on visible text
-		myList.selectByVisibleText("Indian Rupee(INR)");
+		myList.selectByVisibleText("INR");
 		
 		// to find number of values in the drop down list
 		List<WebElement> options = myList.getOptions();

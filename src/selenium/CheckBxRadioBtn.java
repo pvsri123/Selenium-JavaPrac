@@ -19,9 +19,11 @@ public class CheckBxRadioBtn {
 				
 				// Launch the URL
 				driver.get("http://toolsqa.wpengine.com/automation-practice-form");
+				driver.manage().window().maximize();
 				
 				// Step 3 : Select the deselected Radio button (female) for category Sex (Use IsSelected method)
 				// Storing all the elements under category 'Sex' in the list of WebLements	
+				
 				List<WebElement> rdBtn_Sex = driver.findElements(By.name("sex"));
 				
 				// Create a boolean variable which will hold the value (True/False)

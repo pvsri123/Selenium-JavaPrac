@@ -14,7 +14,9 @@ public class MouseOverEx03 {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://facebook.com");
 		driver.manage().window().maximize();
+		
 		WebElement botton = driver.findElement(By.id("u_0_r"));
+		
 		Actions act = new Actions(driver);
 		
 		act.moveToElement(botton).contextClick().build().perform();

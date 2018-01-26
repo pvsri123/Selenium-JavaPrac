@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 public class BookBiographyEx {
 	WebDriver driver;
 	WebDriverWait wait;
+	
 	@BeforeClass
 	
 	public void setUP() throws Exception {

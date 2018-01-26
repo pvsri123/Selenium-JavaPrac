@@ -20,13 +20,16 @@ public class ContextClickEx {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
        
         
-        WebElement element=driver.findElement(By.xpath("//a[@href='/download/']"));
+        //WebElement element=driver.findElement(By.xpath("//a[@href='/download/']"));
+     
+      WebElement element=driver.findElement(By.xpath(".//*[@id='menu_download']/a"));
+              
         element.click();
-        
-        
+                
+                
 WebElement ele2=driver.findElement(By.xpath("//*[@id='nav']/li/ul/li[1]/a"));
         
-        WebElement auto_suggest=(new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='nav']/li/ul/li[1]/a")));
+WebElement auto_suggest=(new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='nav']/li/ul/li[1]/a")));
         
 Actions action= new Actions(driver);
         

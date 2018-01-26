@@ -5,7 +5,7 @@ public class ConsEx01 {
 	//-constructor name is same as Class name
 	
 	// constructor overloading
-	// Constuctors differs, based on number of arguments
+	// Constructors differs, based on number of arguments
 	
 	public ConsEx01(int a, int b){
 		int c= a*b;

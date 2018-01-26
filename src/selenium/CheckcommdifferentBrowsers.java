@@ -11,6 +11,7 @@ public class CheckcommdifferentBrowsers {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver firefoxDriver = new FirefoxDriver();
 		firefoxDriver.get("https://www.google.com");
+		firefoxDriver.manage().window().maximize();
 		firefoxDriver.findElement(By.linkText("Gmail")).click();
 		String text = firefoxDriver.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/h2")).getText();
 

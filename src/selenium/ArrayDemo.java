@@ -16,6 +16,7 @@ public class ArrayDemo {
 		student_id[4]=980;
 				
 		int sizeofArray= student_id.length;
+		
 		System.out.println("Size of arrary is :"+sizeofArray);
 		
 		for (int i=0;i<sizeofArray;i++)

@@ -24,8 +24,6 @@ public class CallbyValandCallbyRef {
 				
 	}
 
-	
-	
 	public int testSum(int a,int b)
 	{
 			a=30;

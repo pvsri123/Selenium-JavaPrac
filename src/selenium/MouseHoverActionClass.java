@@ -26,9 +26,13 @@ public class MouseHoverActionClass {
         Actions action = new Actions(driver);
  
         action.moveToElement(element).build().perform();
+       
         
- 
-       driver.findElement(By.xpath(".//*[@id='nav-flyout-shopAll']/div[2]/span[8]/span")).click();
+           // click on "Books and Audibles" and then click on "Textbooks"
+     //  driver.findElement(By.xpath(".//*[@id='nav-flyout-shopAll']/div[2]/span[8]/span")).click();
+      
+        action.moveToElement(driver.findElement(By.xpath(".//*[@id='nav-flyout-shopAll']/div[2]/span[8]/span"))).build().perform();
+        
         driver.findElement(By.xpath(".//*[@id='nav-flyout-shopAll']/div[3]/div[8]/div[1]/a[5]/span")).click();
        
 	}

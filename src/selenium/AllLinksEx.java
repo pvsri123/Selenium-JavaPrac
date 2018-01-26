@@ -14,7 +14,7 @@ public class AllLinksEx {
 		
 		//The WebDriver code below checks each link from the Mercury Tours home page to determine those that are working and those 
 		// that are still under construction
-		//One of the common procedures in web Testing is to test if all the links 
+		//One of the common procedures in web-Testing is to test if all the links 
 		//present within the page are working. This can be conveniently done using a combination of 
 		// the Java for-each loop, findElements() & By.tagName("a") method.
 		
@@ -24,16 +24,15 @@ public class AllLinksEx {
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
 		
-			
-		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
 		
-		driver.get(baseUrl);					
+		driver.get(baseUrl);	
+		
         List<WebElement> linkElements = driver.findElements(By.tagName("a"));	
       
         System.out.println("Number of links present in the website are:"+linkElements.size());
         
-        String[] linkTexts = new String[linkElements.size()];	
+        String[] linkTexts  = new String[linkElements.size()];	
 		
         int	i = 0;	
       //extract the link texts of each link element		
@@ -45,8 +44,7 @@ public class AllLinksEx {
 		i++;
 		System.out.println("**************************************************");
 		}
-		
-		
+				
 		//test each link	
 		
 		String underConsTitle = "Under Construction: Mercury Tours";

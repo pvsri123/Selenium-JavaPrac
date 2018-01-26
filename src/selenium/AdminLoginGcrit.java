@@ -17,7 +17,9 @@ public class AdminLoginGcrit {
 		driver.findElement(By.id("tdb1")).click();
 			
 		String url =driver.getCurrentUrl();
-		if(url.equals("http://www.gcrit.com/build3/admin/index.php")){
+		System.out.println(url);
+		if(url.equals("http://www.gcrit.com/build3/admin/index.php"))
+		{
 			System.out.println("Login successful- Test passed");
 		}
 		else

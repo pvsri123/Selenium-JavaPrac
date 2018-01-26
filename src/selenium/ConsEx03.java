@@ -9,6 +9,7 @@ public class ConsEx03 {
 		
 		ConsEx03 ce = new ConsEx03();
 		ConsEx03.demoTest();
+		ce.demoTest();
 	}
 
 }

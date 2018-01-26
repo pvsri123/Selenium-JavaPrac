@@ -1,7 +1,10 @@
 package selenium;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,15 +21,21 @@ public class CustomerRegistrationEx01 {
 		driver.findElement(By.linkText("create an account")).click();
 		// check male radio button
 		
-		driver.findElement(By.name("gender")).click();
-		driver.findElement(By.name("firstname")).sendKeys("Venkata");
-		driver.findElement(By.name("lastname")).sendKeys("Sreenivas");
-		driver.findElement(By.name("dob")).sendKeys("09/15/1980");
-		driver.findElement(By.name("email_address")).sendKeys("pvsree123@gmail.com");
-		driver.findElement(By.name("company")).sendKeys("Materials Science and Engineering");
-		driver.findElement(By.name("street_address")).sendKeys("Willa Creek Driver");
-		driver.findElement(By.name("suburb")).sendKeys("Winter Springs");
-		driver.findElement(By.name("postcode")).sendKeys("32708");
+			
+	//	WebElement checkradio = driver.findElement(By.xpath(".//*[@id='bodyContent']/form/div/div[2]/table/tbody/tr[1]/td[2]/input[1]"));
+	
+		WebElement checkradio = driver.findElement(By.name("gender"));
+		checkradio.click();
+				
+		
+		driver.findElement(By.name("firstname")).sendKeys("Ven");
+		driver.findElement(By.name("lastname")).sendKeys("Sree");
+		driver.findElement(By.name("dob")).sendKeys("09/15/1950");
+		driver.findElement(By.name("email_address")).sendKeys("ps123@gmail.com");
+		driver.findElement(By.name("company")).sendKeys("Materials Sci.& Eng.");
+		driver.findElement(By.name("street_address")).sendKeys("Will Creek");
+		driver.findElement(By.name("suburb")).sendKeys("Winter Hot");
+		driver.findElement(By.name("postcode")).sendKeys("32009");
 		driver.findElement(By.name("city")).sendKeys("Orlando");
 		driver.findElement(By.name("state")).sendKeys("Florida");
 		

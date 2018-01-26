@@ -17,7 +17,7 @@ public class RadioButtonWebElement01 {
 		List<WebElement> radios = driver.findElements(By.className("_58mt"));
 		System.out.println("Number of Radio buttons are:"+radios.size());
 		
-		// For each loop with collection variable first, here radio is collection variable
+		// For-each loop with collection variable first, here radio is collection variable
 		
 		for(WebElement radio:radios){
 			radio.click();

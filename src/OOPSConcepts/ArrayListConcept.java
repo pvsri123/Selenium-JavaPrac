@@ -6,7 +6,7 @@ public class ArrayListConcept {
 
 	public static void main(String[] args) {
 		
-		ArrayList ar = new ArrayList();
+		ArrayList ar = new ArrayList();  // non-generic array -with no specific data type
 		
 		ar.add(100);
 		ar.add(200);
@@ -16,7 +16,6 @@ public class ArrayListConcept {
 		
 		ar.add(400);
 		ar.add(500);
-		
 		ar.add(600);
 		ar.add(700);
 		ar.add(800);

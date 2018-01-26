@@ -1,9 +1,9 @@
 package selenium;
 
-public class ArithemeticEx1 {
+public class ArithematicEx01 {
 
-	
 	public static int result;
+	
 	public static void Addone(){
 		int a= 10;
 		int b= 20;

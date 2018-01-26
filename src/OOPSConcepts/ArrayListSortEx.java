@@ -58,8 +58,7 @@ public class ArrayListSortEx {
 		   for(int counter: arraylist){
 				System.out.println(counter);
 			}
-		
-		
+				
 	}
 
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FrameEx05 {
+public class FramesEx05 {
 
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();

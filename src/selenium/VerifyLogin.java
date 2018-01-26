@@ -32,7 +32,8 @@ public class VerifyLogin {
 
 			String url = driver.getCurrentUrl();
 
-			if (url.contains("http://www.gcrit.com/build3/admin/index.php")){
+			if (url.contains("http://www.gcrit.com/build3/admin/index.php"))
+			{
 			System.out.println(iteration + ("Input Data: ") + username + ", "+ password + " Admin Login Successful -Passed");
 			driver.findElement(By.linkText("Logoff")).click();
 			Thread.sleep(2000);

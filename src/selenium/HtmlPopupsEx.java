@@ -17,9 +17,9 @@ public class HtmlPopupsEx {
 		driver.get("http://goindigo.in");
 		driver.manage().window().maximize();
 		
-	//	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		//Click on popup window
+		//Click on pop-up window
 		
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(".//*[@id='roundWay']/form/div[1]/div/div/div/ul/li[3]/div/label")).click();

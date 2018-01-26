@@ -11,6 +11,7 @@ public class LinkInsideOutside {
 		String baseUrl = "http://demo.guru99.com/selenium/block.html";	
 		WebDriver driver = new FirefoxDriver();
 		driver.get(baseUrl);
+		driver.manage().window().maximize();
 		driver.findElement(By.partialLinkText("Inside")).click();	
 		System.out.println(driver.getTitle());
 		

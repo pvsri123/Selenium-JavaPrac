@@ -19,7 +19,7 @@ public class ArrayListGetMethodExample {
 	       System.out.println("Third element of the ArrayList: "+al.get(2));
 	       System.out.println("Sixth element of the ArrayList: "+al.get(5));
 	       System.out.println("Fourth element of the ArrayList: "+al.get(3));
-	       System.out.println("Fourth element of the ArrayList: "+al.get(7));
+	       System.out.println("Seventh element of the ArrayList: "+al.get(7));
 
 	}
 

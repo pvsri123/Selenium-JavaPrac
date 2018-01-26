@@ -22,6 +22,16 @@ public class SimpleAlertEx {
 		System.out.println("Alert text is " + alertText);
 		Thread.sleep(3000);
 		simpleAlert.accept();
+		
+		driver.findElement(By.xpath(".//*[@id='content']/p[8]/button")).click();
+		
+		Alert ConfirmAlert = driver.switchTo().alert();
+		
+		String ConfirmAlertText = ConfirmAlert.getText();
+		System.out.println(ConfirmAlertText);
+		Thread.sleep(3000);
+		ConfirmAlert.accept();
+		
 	}
 
 }

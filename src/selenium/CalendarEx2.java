@@ -40,6 +40,7 @@ public class CalendarEx2 {
 			}
 			while(true);
 		driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/div[2]/table/tbody/tr[2]/td[4]/a")).click();
+		
 	}
 
 }

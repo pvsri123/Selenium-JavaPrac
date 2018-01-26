@@ -15,6 +15,15 @@ public class SearcBoxEx01 {
 		Thread.sleep(2000);
 		
 		driver.findElement(By.linkText("HYDERABAD MGBS")).click();
+		
+		
+		driver.findElement(By.name("toPlaceName")).sendKeys("NLR");
+		Thread.sleep(2000);
+		
+		driver.findElement(By.linkText("KOVUR-NLR")).click();
+		
+		
+		
 	}
 
 }

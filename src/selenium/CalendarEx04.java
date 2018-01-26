@@ -30,6 +30,7 @@ public class CalendarEx04 {
 			}
 		while(true){
 			String Month = driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/div[1]/div/div/span[1]")).getText();
+			
 			if(Month.equals("February"))
 			{
 				driver.findElement(By.linkText("14")).click();

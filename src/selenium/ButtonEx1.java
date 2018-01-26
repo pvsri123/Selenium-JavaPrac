@@ -18,6 +18,16 @@ public class ButtonEx1 {
 				String btnName = button.getText();
 				System.out.println(btnName);
 				button.click();
+				
+		// to check object enabled or not
+				if(button.isEnabled()){
+					System.out.println("Button is enabled");
+					button.click();
+				}
+				else
+				{
+					System.out.println("Button is disabled");
+				}
 
 	}
 

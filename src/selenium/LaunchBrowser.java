@@ -11,15 +11,21 @@ public class LaunchBrowser {
 		String baseUrl = "https://www.facebook.com/";
 		String tagName = "";
 		String tagName1 = "";
+		String tagName2 = "";
 		
 		// launch Fire fox and direct it to the Base URL
 		driver.get(baseUrl);
 		driver.manage().window().maximize();
 		tagName = driver.findElement(By.id("email")).getTagName();
+		
 		//tagName = driver.findElement(By.name("email")).getTagName();
 		tagName1 = driver.findElement(By.xpath(".//*[@id='blueBarDOMInspector']/div/div/div/div[1]/h1/a/i")).getTagName();
-        System.out.println(tagName);
+        tagName2 = driver.findElement(By.id("u_0_e")).getTagName();
+        
+		
+		System.out.println(tagName);
         System.out.println(tagName1);
+        System.out.println(tagName2);
         
         driver.close();
 	}

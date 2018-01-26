@@ -32,7 +32,7 @@ public class DropDownEx05 {
 		Thread.sleep(3000);
 
 		Select Mydropdown3 = new Select(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
-		Mydropdown3.selectByVisibleText("UAE Dirham(AED)");
+		Mydropdown3.selectByVisibleText("AED");
 		
 		// To find the number of values 
 		List<WebElement> items = Mydropdown3.getOptions();

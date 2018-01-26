@@ -26,7 +26,7 @@ public class ImageLinks {
 		 		 
 		//click on the "Facebook" logo on the upper left portion
 		 
-		 driver.findElement(By.cssSelector(".fb_logo.img.sp_ex0C8BIsLat.sx_7401de")).click();
+		 driver.findElement(By.cssSelector(".fb_logo.img.sp_3OxEQobvphM.sx_4353e5")).click();
 		 
 		//verify that we are now back on Facebook's homepage	
 		 			

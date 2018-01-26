@@ -20,7 +20,7 @@ public class MouseOverEx07 {
 		
 		WebElement ele1 = driver.findElement(By.id("gh-btn"));
 		//WebElement ele2= driver.findElement(By.xpath("//*[text()='Daily Deals']"));
-		WebElement ele2= driver.findElement(By.linkText("Daily Deals"));
+		WebElement ele2= driver.findElement(By.linkText("Deals"));
 		Actions act = new Actions(driver);
 		
 		// To scroll down to the page upto Dialy Deals using drag and drop

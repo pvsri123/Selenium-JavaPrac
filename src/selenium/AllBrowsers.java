@@ -37,10 +37,12 @@ public static void main(String[] args)
 
 			String PageTitle = driver.getTitle();
 
-			if (PageTitle.equals("Google")){
+			if (PageTitle.equals("Google"))
+			{
 			System.out.println(BrowserName + " - Google Application Launched - Passed");
 			}
-			else {
+			else 
+			{
 			System.out.println(BrowserName + " - Google Application Not Launched -Failed");    
 			}
 			driver.close();

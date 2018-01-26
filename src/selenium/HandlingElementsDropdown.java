@@ -1,6 +1,7 @@
 package selenium;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,8 +15,9 @@ public class HandlingElementsDropdown {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.gcrit.com/build3/create_account.php?osCsid=47gtsrhe41613u5r3eqhgdbas7");
-		
-		Select dropDown = new Select (driver.findElement(By.name("country")));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Select dropDown = new Select(driver.findElement(By.name("country")));
 		
 		dropDown.selectByIndex(6);//Select an item by index
 	   

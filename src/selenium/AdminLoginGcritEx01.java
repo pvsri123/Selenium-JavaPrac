@@ -19,9 +19,10 @@ public class AdminLoginGcritEx01 {
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		
-		if (url.equals("http://www.gcrit.com/build3/admin/index.php")){
+		if (url.equals("http://www.gcrit.com/build3/admin/index.php"))
+		{
 			driver.findElement(By.linkText("Online Catalog")).click();
-			}
+		}
 		System.out.println(driver.getCurrentUrl());
 
 	}

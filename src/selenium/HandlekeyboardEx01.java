@@ -24,7 +24,7 @@ public class HandlekeyboardEx01 {
 		  WebElement pwd = driver.findElement(By.name("password"));
 		  WebElement login = driver.findElement(By.name("login"));
 
-		   //Enter username and password Softedge100
+		   //Enter user-name and password Softedge100
 		  Actions actions = new Actions(driver);
 		  Action build = actions.moveToElement(uName).click(uName)
 		                  .keyDown(Keys.SHIFT).sendKeys("s").keyUp(Keys.SHIFT)

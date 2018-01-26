@@ -10,6 +10,7 @@ public class LocatingStratagies {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.indeed.com/");
+		driver.manage().window().maximize();
 		
 		// Locating by Id
 		// driver.findElement(By.id("what")).sendKeys("selenium");

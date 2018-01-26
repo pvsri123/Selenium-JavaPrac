@@ -12,7 +12,7 @@ public class FramesEx03 {
 	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new FirefoxDriver();
-		driver.get("http://seleniumhq.github.io/selenium/docs/api/java/index.html");
+		driver.get("https://netbanking.hdfcbank.com/netbanking");
 		driver.manage().window().maximize();
 		List<WebElement> myFrames = driver.findElements(By.tagName("frame"));
 		
@@ -22,9 +22,9 @@ public class FramesEx03 {
 			System.out.println(myFrame.getAttribute("name"));
 		}
 		
-		driver.switchTo().frame("classFrame");
+		/*driver.switchTo().frame("footer");
 		Thread.sleep(3000);
-		driver.findElement(By.linkText("org.openqa.selenium.chrome")).click();
+		driver.findElement(By.linkText("org.openqa.selenium.chrome")).click();*/
 		
 		}
 

@@ -7,11 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HandlingElements {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www.gcrit.com/build3/");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath(".//*[@id='bodyContent']/div/div[1]/a[2]/u")).click();
+		Thread.sleep(3000);
 		WebElement MaleRaidoButton = driver.findElement(By.xpath(".//*[@id='bodyContent']/form/div/div[2]/table/tbody/tr[1]/td[2]/input[1]"));
 		boolean elementStatus = MaleRaidoButton.isDisplayed();
 		System.out.println(elementStatus);//true

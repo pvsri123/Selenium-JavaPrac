@@ -14,7 +14,7 @@ public class JavaScriptPopups {
 			driver.manage().window().maximize();
 			driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 			
-			// click on go to button without username and password
+			// click on go to button without user name and password
 			
 			driver.findElement(By.name("proceed")).click();
 			

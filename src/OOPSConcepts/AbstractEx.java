@@ -4,7 +4,7 @@ public class AbstractEx {
 
 	public static void main(String[] args) {
 		
-		// Uncommenting the following line will cause compiler error as the 
+		// Un-commenting the following line will cause compiler error as the 
         // line tries to create an instance of abstract class.
         // Base b = new Base();
  
@@ -19,11 +19,11 @@ public class AbstractEx {
 	
 	abstract class Base 
 	{
-	    abstract void fun();
+	   public abstract void fun();
 	}
 	class Derived extends Base 
 	{
-	    void fun() 
+	   public void fun() 
 	    { System.out.println("Derived fun() called"); 
 	    }
 	}

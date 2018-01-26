@@ -11,6 +11,8 @@ public class ListArray {
 		
 		// obj1 object is created using ArrayList
 		
+		// Using Array list we can pass different variables
+		
 		ArrayList obj1 = new ArrayList();
 		
 		obj1.add(7878787);

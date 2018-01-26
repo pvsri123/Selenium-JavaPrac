@@ -14,16 +14,15 @@ public class MouseOverEx1 {
 		
 		String baseUrl = "http://facebook.com";
 		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
 		driver.get(baseUrl);
 		
 		WebElement txtUsername = driver.findElement(By.id("email"));
 		
-		driver.manage().window().maximize();
 		Actions builder = new Actions(driver);
 		Actions seriesOfActions = builder.moveToElement(txtUsername);
 		builder.click();
 		builder.keyDown(txtUsername,Keys.SHIFT);
-		
 		builder.sendKeys(txtUsername,"hello");
 		builder.doubleClick();
 		builder.contextClick();

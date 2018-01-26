@@ -19,10 +19,12 @@ public class AbstractClassDemo {
 	}
 }
 
+//abstract parent class
+
 	abstract class FirstGenPhone
 	{
 			
-		public void call()
+		public  void call()
 		{
 			System.out.println("Calling.....");
 		}
@@ -34,13 +36,13 @@ public class AbstractClassDemo {
 	
 	abstract  class SecondGenPhone extends FirstGenPhone
 	{
-		// When extends, it has to use all the methods from the extended class
+		// When extends, it has to use all the abstract methods from the extended class
 		
 		public void photo()
 		{
 			System.out.println("Picturing.......");
 		}
-				
+			
 	}
 	// Concrete class
 	
@@ -48,7 +50,7 @@ public class AbstractClassDemo {
 	{
 			public void video()
 			{
-				System.out.println("Shooting video.....");
+				System.out.println("Filming video.....");
 			}
 			
 			public void whatsapp()

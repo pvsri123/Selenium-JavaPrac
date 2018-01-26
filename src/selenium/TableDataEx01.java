@@ -34,7 +34,7 @@ public class TableDataEx01 {
         List<WebElement> rows = dateWidget.findElements(By.tagName("tr"));
         List<WebElement> columns = dateWidget.findElements(By.tagName("td"));
 
-        // select 13th date
+        // select 20th date
         for (WebElement row : rows) {
             for (WebElement col : columns) {
                 if (col.getText().equals("20")) {

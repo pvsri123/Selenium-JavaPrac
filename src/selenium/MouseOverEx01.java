@@ -17,6 +17,7 @@ public class MouseOverEx01 {
 		
 	Actions act= new Actions(driver);
 	act.moveToElement(search).contextClick().build().perform();
+	 driver.close();
 	}
 
 }

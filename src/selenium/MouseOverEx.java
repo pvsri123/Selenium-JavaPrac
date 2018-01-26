@@ -11,7 +11,7 @@ public class MouseOverEx {
 
 	public static void main(String[] args) {
 		
-		String baseUrl = "http://demo.guru99.com/selenium/newtours/";
+		String baseUrl = "http://newtours.demoaut.com/";
 		WebDriver driver = new FirefoxDriver();
 		driver.get("baseUrl");
 		WebElement link_Home = driver.findElement(By.linkText("Home"));

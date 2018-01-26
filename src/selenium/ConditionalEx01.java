@@ -28,7 +28,6 @@ public class ConditionalEx01 {
 			System.out.println("smaller value is :"+c);
 		}
 
-
 	}
 
 }

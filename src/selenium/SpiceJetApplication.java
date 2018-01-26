@@ -14,7 +14,7 @@ public class SpiceJetApplication {
 		driver.findElement(By.xpath(".//*[@id='buttons']/ul/li[2]/a/span[2]")).click();
 			
 		driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_txtOriginStation1_MST']")).sendKeys("Hyderabad");
-		//driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_txt_Fromdate_MST']")).sendKeys("10/10/2017");
+		driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_txt_Fromdate_MST']")).sendKeys("10/10/2018");
 	}
 
 }

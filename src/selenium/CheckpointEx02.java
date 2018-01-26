@@ -24,6 +24,7 @@ public class CheckpointEx02 {
 		driver.findElement(By.className("loginCaptcha")).sendKeys(captcha);
 		driver.findElement(By.id("loginbutton")).click();
 		String url = driver.getCurrentUrl();
+		System.out.println(url);
 		if (url.equals("https://www.irctc.co.in/eticketing/home")){
 			System.out.println("Login Successful - Passed");
 			}

@@ -15,7 +15,8 @@ public class ArraryObjectEx {
 		obj[4]="M";
 		obj[5]="Hyderabad";
 		
-		for(int i=0;i<obj.length;i++){
+		for(int i=0;i<obj.length;i++)
+		{
 			
 			System.out.println(obj[i]);
 		}

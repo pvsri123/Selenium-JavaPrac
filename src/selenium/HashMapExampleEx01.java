@@ -16,8 +16,24 @@ public class HashMapExampleEx01 {
 		   // Remove value of key 5  
 		   map.remove(5);  
 		  System.out.println("Tutorial in Guru99 After Remove: "+ map);
-		   
-		   
+		  
+		  		   
+		  // containsKey(Object KEY) method will return a Boolean value
+		    
+			boolean b=    map.containsKey(1);
+			System.out.println(b);
+
+			// a method called as keyset() that will return all the keys on the map
+			// a method called as values() that will return all the values on the map
+			
+			System.out.println(map.keySet());
+			
+			System.out.println(map.values());
+			
+			
+			//How can we check if you actually contain some key-value pairs?
+			boolean b1 = map.isEmpty();
+			System.out.println(b1);
 
 	}
 

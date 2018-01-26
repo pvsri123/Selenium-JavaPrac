@@ -4,7 +4,7 @@ public class ArithematicEx04 {
 
 	
 	// write program to perfrom arithemetic operation, whereas while calling
-	//submethod we need to pass the test data and also submethod return the value
+	//sub-method we need to pass the test data and also sub-method return the value
 	//	to main method
 	
 	public int result;
